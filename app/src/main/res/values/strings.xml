@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MyExamApplication</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title">日本語能力試験の漢字テスト</string>
+    <string name="paragraph">言語知識(漢字)</string>
+    <string name="paragraph2">(2ふん)</string>
+    <string name="paragraph3">質問数 : 10</string>
+    <string name="User_id">UserID</string>
+    <string name="Your_name">Name</string>
+    <string name="Take_exam">Take a exam</string>
+    <string name="Your_phone">Phone Number</string>
+    <string name="submit_button">Submit</string>
+    <string name="title_question">Japanese Kanji Training(%1$d/%2$d)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="you_scored">You Scored</string>
+    <string name="home">Home</string>
+    <string name="timer_format">Timer Limited: %d</string>
+    <string name="score_format">Current Score: %d</string>
+    <string name="finish_exam">Finish Exam</string>
+    <string name="your_result">Your Result</string>
+</resources>
