@@ -12,4 +12,6 @@
     <dimen name="answer_text_size">18sp</dimen>
     <dimen name="question_text_size">30sp</dimen>
     <dimen name="question_title_size">25sp</dimen>
+    <dimen name="text_margin">20dp</dimen>
+    <dimen name="text_padding">10dp</dimen>
 </resources>
