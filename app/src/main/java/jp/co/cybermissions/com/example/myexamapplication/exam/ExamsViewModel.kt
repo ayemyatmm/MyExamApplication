@@ -40,9 +40,9 @@ class ExamsViewModel : ViewModel() {
         DateUtils.formatElapsedTime(time)
     }
 
-    private val _eventGameFinish = MutableLiveData<Boolean>()
-    val eventGameFinish: LiveData<Boolean>
-        get() = _eventGameFinish
+    private val _examFinish = MutableLiveData<Boolean>()
+    val examFinish: LiveData<Boolean>
+        get() = _examFinish
 
 
     data class Question(
@@ -71,8 +71,8 @@ class ExamsViewModel : ViewModel() {
             answers = listOf("きびしい", "かなしい", "くるしい", "さびしい")),
         Question(text = "Q。結婚式",
             answers = listOf("けっこんしき", "けごんしき", "けっこんしぎ", "けこんしき")),
-        Question(text = "Q。恥",
-            answers = listOf("はじ", "いびき", "あせ", "ち"))
+//        Question(text = "Q。恥",
+//            answers = listOf("はじ", "いびき", "あせ", "ち"))
 
     )
 
@@ -92,7 +92,7 @@ class ExamsViewModel : ViewModel() {
 
             override fun onFinish() {
                 _currentTime.value = DONE
-                onGameFinish()
+                onExamFinish()
             }
          }
         timer.start()
@@ -109,10 +109,6 @@ class ExamsViewModel : ViewModel() {
         _score.value = (_score.value)?.plus(1)
     }
 
-    fun onMinus(){
-        _score.value = (_score.value)?.minus(1)
-    }
-
     private fun randomizeQuestions() {
         questions.shuffle()
         questionIndex = 0
@@ -127,10 +123,10 @@ class ExamsViewModel : ViewModel() {
         answers.shuffle()
     }
 
-    fun onGameFinishComplete(){
-        _eventGameFinish.value = false
+    fun onExamFinishComplete(){
+        _examFinish.value = false
     }
-    fun onGameFinish(){
-     _eventGameFinish.value = true
+    fun onExamFinish(){
+        _examFinish.value = true
     }
 }

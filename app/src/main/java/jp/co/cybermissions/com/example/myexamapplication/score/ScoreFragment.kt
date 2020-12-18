@@ -8,7 +8,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
+import com.google.firebase.auth.FirebaseAuth
+import jp.co.cybermissions.com.example.myexamapplication.LoginViewModel
 import jp.co.cybermissions.com.example.myexamapplication.R
 import jp.co.cybermissions.com.example.myexamapplication.databinding.ScoreFragmentBinding
 
@@ -16,8 +19,6 @@ class ScoreFragment : Fragment() {
 
     private lateinit var viewModel: ScoreViewModel
     private lateinit var viewModelFactory: ScoreViewModelFactory
-
-//    var displayMessage: String? = ""
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -30,15 +31,10 @@ class ScoreFragment : Fragment() {
         binding.scoreViewModel = viewModel
         binding.lifecycleOwner = viewLifecycleOwner
 
-        //displayMessage = arguments?.getString("message")
-
-        //binding.displayName.text = displayMessage
-
         binding.homebutton.setOnClickListener{
             view: View -> view.findNavController().navigate(ScoreFragmentDirections.actionScoreFragmentToMainFragment())
         }
         return binding.root
 
     }
-
 }
