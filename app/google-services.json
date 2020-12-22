@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "1017096886658",
+    "project_id": "loginproject-4235b",
+    "storage_bucket": "loginproject-4235b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017096886658:android:6ae61e02e50ab6749c179b",
+        "android_client_info": {
+          "package_name": "com.example.android.firebaseui_login_sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1017096886658-2vg8do4kmv7l36qqoto4uqv9ghn0k6ev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsX6RUWUZTZfD0-XjAVCArwz6vRAUnk1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1017096886658-2vg8do4kmv7l36qqoto4uqv9ghn0k6ev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017096886658:android:118a1bb022fa68469c179b",
+        "android_client_info": {
+          "package_name": "jp.co.cybermissions.com.example.myexamapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1017096886658-2vg8do4kmv7l36qqoto4uqv9ghn0k6ev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsX6RUWUZTZfD0-XjAVCArwz6vRAUnk1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1017096886658-2vg8do4kmv7l36qqoto4uqv9ghn0k6ev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

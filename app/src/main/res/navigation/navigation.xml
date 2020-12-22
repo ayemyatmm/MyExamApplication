@@ -6,12 +6,12 @@
     app:startDestination="@id/mainFragment">
 
     <fragment
-        android:id="@+id/mainFragment"
-        android:name="jp.co.cybermissions.com.example.myexamapplication.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        android:id="@+id/firstFragment"
+        android:name="jp.co.cybermissions.com.example.myexamapplication.first.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first">
         <action
-            android:id="@+id/action_mainFragment_to_examFragment"
+            android:id="@+id/action_firstFragment_to_examFragment"
             app:destination="@id/examFragment" />
     </fragment>
     <fragment
@@ -28,12 +28,20 @@
         android:name="jp.co.cybermissions.com.example.myexamapplication.score.ScoreFragment"
         android:label="score_fragment"
         tools:layout="@layout/score_fragment" >
-        <action
-            android:id="@+id/action_scoreFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
         <argument
             android:name="score"
             android:defaultValue="0"
             app:argType="integer" />
+        <action
+            android:id="@+id/action_scoreFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="jp.co.cybermissions.com.example.myexamapplication.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
     </fragment>
 </navigation>
